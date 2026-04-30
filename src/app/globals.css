@@ -1,50 +1,6 @@
 @import "tailwindcss";
 
-@theme {
-  --font-space-grotesk: var(--font-space-grotesk);
-  --font-inter: var(--font-inter);
 
-  --color-primary: #57f1db;
-  --color-on-primary: #003731;
-  --color-primary-container: #2dd4bf;
-  --color-on-primary-container: #00574d;
-  
-  --color-secondary: #ddb7ff;
-  --color-on-secondary: #490080;
-  --color-secondary-container: #6f00be;
-  --color-on-secondary-container: #d6a9ff;
-
-  --color-tertiary: #ffcddd;
-  --color-on-tertiary: #640039;
-  --color-tertiary-container: #ffa3c7;
-  --color-on-tertiary-container: #98005a;
-
-  --color-background: #0b1326;
-  --color-on-background: #dae2fd;
-  
-  --color-surface: #0b1326;
-  --color-on-surface: #dae2fd;
-  --color-surface-variant: #2d3449;
-  --color-on-surface-variant: #bacac5;
-  --color-outline: #859490;
-  --color-outline-variant: #3c4a46;
-
-  --color-surface-container-lowest: #060e20;
-  --color-surface-container-low: #131b2e;
-  --color-surface-container: #171f33;
-  --color-surface-container-high: #222a3d;
-  --color-surface-container-highest: #2d3449;
-
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-
-  --font-h1: var(--font-space-grotesk);
-  --font-h2: var(--font-space-grotesk);
-  --font-h3: var(--font-space-grotesk);
-  --font-body-lg: var(--font-inter);
-  --font-body-md: var(--font-inter);
-  --font-label-sm: var(--font-inter);
-}
 
 @layer utilities {
   .glass-card {
@@ -53,12 +9,15 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
+
   .glow-primary {
     box-shadow: 0 0 20px rgba(87, 241, 219, 0.3);
   }
+
   .glow-secondary {
     box-shadow: 0 0 20px rgba(221, 183, 255, 0.3);
   }
+
   .gradient-text {
     background: linear-gradient(135deg, #57f1db 0%, #ddb7ff 100%);
     -webkit-background-clip: text;
@@ -77,6 +36,8 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-space-grotesk), sans-serif;
 }
